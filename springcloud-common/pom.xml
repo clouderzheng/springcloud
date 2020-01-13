@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-consumer</artifactId>
+    <artifactId>springcloud-common</artifactId>
 
-<dependencies>
-    <dependency>
-        <groupId>springcloud</groupId>
-        <artifactId>springcloud-common</artifactId>
-        <version>1.1.0</version>
-    </dependency>
-</dependencies>
+
 </project>

@@ -41,6 +41,8 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>
@@ -69,5 +71,6 @@
         <module>springcloud_server</module>
         <module>springcloud-provider</module>
         <module>springcloud-consumer</module>
+        <module>springcloud-common</module>
     </modules>
 </project>

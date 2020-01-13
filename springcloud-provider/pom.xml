@@ -11,5 +11,12 @@
 
     <artifactId>springcloud-provider</artifactId>
 
+<dependencies>
 
+    <dependency>
+        <groupId>springcloud</groupId>
+        <artifactId>springcloud-common</artifactId>
+        <version>1.1.0</version>
+    </dependency>
+</dependencies>
 </project>
