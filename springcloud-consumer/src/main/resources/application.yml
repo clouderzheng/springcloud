@@ -21,3 +21,7 @@ feign:
       enabled: true
     response:
       enabled: true
+logging:
+  level:
+    night.springcloud.service.FeignService : debug
+    night.springcloud.service.FeignGzipService : debug

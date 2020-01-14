@@ -1,5 +1,6 @@
 package night;
 
+import feign.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -30,5 +31,10 @@ public class Application {
     @LoadBalanced
     RestTemplate restTemplate(){
         return new RestTemplate();
+    }
+
+    @Bean
+    Logger.Level feignLogerLever(){
+        return Logger.Level.FULL;
     }
 }
