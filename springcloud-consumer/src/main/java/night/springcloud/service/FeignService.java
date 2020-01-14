@@ -1,6 +1,7 @@
 package night.springcloud.service;
 
 import com.night.common.domain.UserDomain;
+import night.springcloud.service.serviceImpl.FeignFallbackService;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @version 1.1.0
  * @Date 2020/1/13 16:46
  */
-@FeignClient("provider")
+@FeignClient(name="provider",fallback = FeignFallbackService.class)
 public interface FeignService {
 
     @RequestMapping("/provider/getName")

@@ -13,3 +13,11 @@ eureka:
 provider:
   ribbon:
     ReadTimeOut: 1000
+feign:
+  hystrix:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true

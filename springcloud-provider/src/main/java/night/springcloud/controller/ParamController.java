@@ -29,9 +29,9 @@ public class ParamController {
     @RequestMapping("/object")
     public String hello(@RequestBody UserDomain user) throws Exception {
 
-        long sleepTime = new Random().nextInt(4000);
-        log.info("sleeptime ---》 "+ sleepTime);
-        Thread.sleep(sleepTime);
+//        long sleepTime = new Random().nextInt(4000);
+//        log.info("sleeptime ---》 "+ sleepTime);
+//        Thread.sleep(sleepTime);
         return "hello  body ," + user.getName()+", you are " + user.getAge();
     }
 }
