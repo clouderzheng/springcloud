@@ -1,0 +1,18 @@
+server:
+  port : 5555
+spring:
+  application:
+    name: gateway
+eureka:
+  instance:
+    hostname : localhost
+  client:
+    serviceUrl.defaultZone : http://${eureka.instance.hostname}:9113/eureka/
+zuul:
+  routes:
+    provider:
+      path: /provider/**
+      serviceId : provider
+    consumer:
+      path: /consumer/**
+      serviceId : consumer
